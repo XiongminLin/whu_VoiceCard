@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{870752AE-86B0-423B-B5B4-232B2EF53D1A}</ProjectGuid>
+    <RootNamespace>whu_VoiceCard</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\OpenCV-2.3.1\build\include;C:\OpenCV-2.3.1\build\include\opencv;C:\OpenCV-2.3.1\build\include\opencv2;C:\Program Files\FaxServer Printer\include;C:\ShCti\api\Vc6.0\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV-2.3.1\build\x86\vc10\lib;C:\Program Files\FaxServer Printer\library;C:\ShCti\api\Vc6.0\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_core231d.lib;opencv_highgui231d.lib;opencv_video231d.lib;opencv_ml231d.lib;opencv_legacy231d.lib;opencv_imgproc231d.lib;shp_a3.lib;bmputil.lib;ConvertAgent.lib;PrinterSettings.lib;Winmm.lib;SkinPPWTL.lib;SkinPPWTL.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\calling.gif" />
+    <None Include="res\calling2.gif" />
+    <None Include="res\gif2.bin" />
+    <None Include="res\lin.bmp" />
+    <None Include="res\lin.JPG" />
+    <None Include="res\shake.wav" />
+    <None Include="res\whu_VoiceCard.ico" />
+    <None Include="res\whu_VoiceCard.rc2" />
+    <None Include="res\xx.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CAdodc.h" />
+    <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CDataGrid.h" />
+    <ClInclude Include="CFont0.h" />
+    <ClInclude Include="CRange.h" />
+    <ClInclude Include="CSheets.h" />
+    <ClInclude Include="CvvImage.h" />
+    <ClInclude Include="Cwhu_ChgPwdDlg.h" />
+    <ClInclude Include="Cwhu_ContractDlg.h" />
+    <ClInclude Include="Cwhu_DocuDlg.h" />
+    <ClInclude Include="Cwhu_FaxDlg.h" />
+    <ClInclude Include="Cwhu_FaxSettingDlg.h" />
+    <ClInclude Include="Cwhu_GroupSendThread.h" />
+    <ClInclude Include="Cwhu_HistoryDlg.h" />
+    <ClInclude Include="Cwhu_NoticeDlg.h" />
+    <ClInclude Include="Cwhu_OnDutyDlg.h" />
+    <ClInclude Include="Cwhu_PhoneDlg.h" />
+    <ClInclude Include="Cwhu_RecvCallDlg.h" />
+    <ClInclude Include="Cwhu_UserDlg.h" />
+    <ClInclude Include="Cwhu_WHSW.h" />
+    <ClInclude Include="CWorkbook.h" />
+    <ClInclude Include="CWorkbooks.h" />
+    <ClInclude Include="CWorksheet.h" />
+    <ClInclude Include="CWorksheets.h" />
+    <ClInclude Include="DetailLogDlg.h" />
+    <ClInclude Include="HeaderCtrlCl.h" />
+    <ClInclude Include="HzToPy.h" />
+    <ClInclude Include="inc\column.h" />
+    <ClInclude Include="inc\columns.h" />
+    <ClInclude Include="Lin_Excel_List.h" />
+    <ClInclude Include="ListCtrlCl.h" />
+    <ClInclude Include="OpenExcelDlg.h" />
+    <ClInclude Include="PictureEx.h" />
+    <ClInclude Include="RegisterDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SaveEveryingDlg.h" />
+    <ClInclude Include="SendMail.h" />
+    <ClInclude Include="shockwaveflash1.h" />
+    <ClInclude Include="SkinPPWTL.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Whu_AutoForDlg.h" />
+    <ClInclude Include="Whu_UserChgPwd.h" />
+    <ClInclude Include="whu_VoiceCard.h" />
+    <ClInclude Include="whu_VoiceCardDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CAdodc.cpp" />
+    <ClCompile Include="CDataGrid.cpp" />
+    <ClCompile Include="CvvImage.cpp" />
+    <ClCompile Include="Cwhu_ChgPwdDlg.cpp" />
+    <ClCompile Include="Cwhu_ContractDlg.cpp" />
+    <ClCompile Include="Cwhu_DocuDlg.cpp" />
+    <ClCompile Include="Cwhu_FaxDlg.cpp" />
+    <ClCompile Include="Cwhu_FaxSettingDlg.cpp" />
+    <ClCompile Include="Cwhu_GroupSendThread.cpp" />
+    <ClCompile Include="Cwhu_HistoryDlg.cpp" />
+    <ClCompile Include="Cwhu_NoticeDlg.cpp" />
+    <ClCompile Include="Cwhu_OnDutyDlg.cpp" />
+    <ClCompile Include="Cwhu_PhoneDlg.cpp" />
+    <ClCompile Include="Cwhu_RecvCallDlg.cpp" />
+    <ClCompile Include="Cwhu_UserDlg.cpp" />
+    <ClCompile Include="Cwhu_WHSW.cpp" />
+    <ClCompile Include="DetailLogDlg.cpp" />
+    <ClCompile Include="HeaderCtrlCl.cpp" />
+    <ClCompile Include="HzToPy.cpp" />
+    <ClCompile Include="inc\column.cpp" />
+    <ClCompile Include="inc\columns.cpp" />
+    <ClCompile Include="Lin_Excel_List.cpp" />
+    <ClCompile Include="ListCtrlCl.cpp" />
+    <ClCompile Include="OpenExcelDlg.cpp" />
+    <ClCompile Include="picture.cpp" />
+    <ClCompile Include="PictureEx.cpp" />
+    <ClCompile Include="RegisterDlg.cpp" />
+    <ClCompile Include="SaveEveryingDlg.cpp" />
+    <ClCompile Include="SendMail.cpp" />
+    <ClCompile Include="shockwaveflash1.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Whu_AutoForDlg.cpp" />
+    <ClCompile Include="Whu_UserChgPwd.cpp" />
+    <ClCompile Include="whu_VoiceCard.cpp" />
+    <ClCompile Include="whu_VoiceCardDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="whu_VoiceCard.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="whu_VoiceCard.rc" _x007B_67397AA3-7FB1-11D0-B148-00A0C922E820_x007D_="CAdodc" _x007B_CDE57A43-8B86-11D0-B3C6-00A0C90AEA82_x007D_="CDatagrid1" _x007B_D27CDB6E-AE6D-11CF-96B8-444553540000_x007D_="CShockwaveflash" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
